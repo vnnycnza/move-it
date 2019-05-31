@@ -1,10 +1,8 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 const Availability = require('./services/Availability');
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: false }));
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
