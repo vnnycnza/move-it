@@ -28,7 +28,7 @@ app.get('*', (req,res) =>{
   res.sendFile(path.join(path.dirname(__dirname), '/client/build/index.html'));
 });
 
-app.listen(3001, () => {
+app.listen((process.env.PORT || 3001), () => {
   console.log('[Server] Express server is running on localhost:3001')
 });
 
