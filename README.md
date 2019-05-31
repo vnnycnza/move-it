@@ -1,12 +1,12 @@
 # Move It
-Solution to Smove Fullstack Challenge
+Solution to Smove Fullstack Challenge (https://mysterious-oasis-93723.herokuapp.com/)
 
 ## Application
-The app allows a user to select or enter a timeframe within the day. This input is used to fetch from the Booking Availability API. Data from the API is then formatted and the Street Address is queried using Google Maps API. Results from Booking Availability API with available_cars > 0 are returned as a list with the street address, count of available cars and drop off count. A map is also shown with markers for the given drop-off locations. Street Address of drop-off locations can also be seen upon click of map marker. 
+The app allows a user to select or enter a timeframe within the day. This input is used to fetch from the `Booking Availability API`. Data from the API is then formatted and the Street Address is queried using `Google Maps API`. Results from Booking Availability API with available_cars > 0 are returned as a list with the street address, count of available cars and drop off count. A map is also shown with markers for the given drop-off locations. Street Address of drop-off locations can also be seen upon click of map marker. 
 
 ## Features
 - Form to enter start and end time
-- API calls to Smove API and Google Maps
+- API calls to `Smove API` and `Google Maps`
 - Shows list of locations with available cars
 - Shows map of drop off locations
 - I like to move it move it 
@@ -15,6 +15,7 @@ The app allows a user to select or enter a timeframe within the day. This input 
 #### APIs
 - [Booking Availability API](https://github.com/itatsmove/smovechallenge/blob/master/challenges/availability.md)
 - [Google Maps Geocode API](https://developers.google.com/maps/documentation/geocoding/start)
+- [Maps Javascript API](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
 
 #### Client Side
 - [React.js](https://reactjs.org/) as framework, used [Create React App](https://github.com/facebook/create-react-app) as base
@@ -41,3 +42,7 @@ $ cd move-it/client
 $ npm install
 $ REACT_APP_GOOGLE_API_KEY=<YOUR_GOOGLE_API_KEY> npm start
 ```
+
+## Production
+
+The app is deployed via `Heroku` and can be accessed [HERE](https://mysterious-oasis-93723.herokuapp.com/). 
