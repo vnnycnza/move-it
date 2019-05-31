@@ -5,7 +5,7 @@ const Availability = require('./services/Availability');
 const app = express();
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(path.dirname(__dirname), '/client/build')));
 
 // Backend API
 app.get('/v1/availability', async (req, res) => {
@@ -25,11 +25,11 @@ app.get('/v1/availability', async (req, res) => {
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  res.sendFile(path.join(path.dirname(__dirname), '/client/build/index.html'));
 });
 
-app.listen(3001, () =>
+app.listen(3001, () => {
   console.log('[Server] Express server is running on localhost:3001')
-);
+});
 
 
