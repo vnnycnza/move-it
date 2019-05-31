@@ -1,0 +1,18 @@
+{
+  "name": "move-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "author": "@vnnycnza",
+  "scripts": {
+    "start": "node server/index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
+    "axios": "^0.18.0"
+  }
+}
